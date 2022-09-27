@@ -18,9 +18,9 @@ fetch(url, options)
         showProduct(data);
     })
 
-    // .catch((e) => {
-    //     console.error("an error occured: ", e.message);
-    // });
+    .catch((e) => {
+        console.error("an error occured: ", e.message);
+    });
 
     //populate the data 
     function showProduct(product) {
