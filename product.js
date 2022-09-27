@@ -1,4 +1,4 @@
-const url= "https://kea22w-6c02.restdb.io/rest/starlab"  
+const url= "https://kea22w-6c02.restdb.io/rest/starlab?q={%22_id%22:%22632dc3ec5057d14f0003c867%22}"  
 const options = {
       headers: {
            "x-apikey": "6331a2f932330102d591d1ed"   }
@@ -23,10 +23,13 @@ fetch(url, options)
     });
 
     //populate the data 
-    function showProduct(product){
+    function showProduct(product) {
         console.log(product);
-        document.querySelector(".breadcrumbs .brand").textContent=product.subcategory;
-        document.querySelector(".breadcrumbs .brand").textContent=product.name;
-        document.querySelector("img.productimage").src=product.img_url;
-        document.querySelector("img.productimage").alt=product.name;
+        document.querySelector(".breadcrumbs .brands").textContent = product.subcategory;
+        document.querySelector(" .productname").textContent = product.name;
+        document.querySelector(".productname").textContent = product.name;
+        document.querySelector("img.productimage").src = product.img_url;
+        document.querySelector("img.productimage").alt = product.name;
+        
+
     }
