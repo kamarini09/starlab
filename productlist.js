@@ -27,16 +27,7 @@ fetch(url, options)
        data.forEach(showProduct);
     }
 
-//     <article class="smallProduct">
-//     <img
-//       src="https://kamarini.dk/photosstarlab/bikini2a.jpg"
-//       alt="bikini"
-//     />
-//     <h2>bikiki name</h2>
-//     <p class="price">1200</p>
-//     <p class="description">bla bla bla</p>
-//     <p class="size">C</p>
-//   </article>
+
 
     function showProduct(product){
         console.log(product);
