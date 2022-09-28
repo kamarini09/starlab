@@ -1,4 +1,10 @@
-const url= "https://kea22w-6c02.restdb.io/rest/starlab" ;
+const urlParams = new URLSearchParams(window.location.search);
+
+const category = urlParams.get("category");
+console.log(category);
+
+
+const url= `https://kea22w-6c02.restdb.io/rest/starlab` ;
 const options = {
       headers: {
            "x-apikey": "6331a2f932330102d591d1ed"   }
@@ -50,6 +56,7 @@ fetch(url, options)
        
         
        
+
 
 
         //grab parent
