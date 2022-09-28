@@ -13,7 +13,7 @@ fetch(url, options)
     })
 
     .then((data) => {
-        // console.log(data);
+         //console.log(data);
         handleProductList(data);
     })
 
@@ -23,7 +23,7 @@ fetch(url, options)
 
 
     function handleProductList(data){
-        // console.log(data);
+        console.log(data);
        data.forEach(showProduct);
     }
 
@@ -41,12 +41,19 @@ fetch(url, options)
     function showProduct(product){
         console.log(product);
         //grab the template
-        const template = document.querySelector("smallProductTemplate").content;
+        const template = document.querySelector("#smallProductTemplate").content;
     
         //clone it
         const copy = template.cloneNode(true);
         //change content
         copy.querySelector(".name").textContent = `${product.name}`;
+        copy.querySelector("a").href = `./product.html?id=${product._id}`;
+        copy.querySelector("img").src = `${product.img_url}`;
+        copy.querySelector("img").alt = `${product.name}`;
+        copy.querySelector(".price").textContent = `${product.price}`;
+        copy.querySelector(".description").textContent = `${product.description}`;
+        copy.querySelector(".size").textContent = `${product.size}`;
+
 
         //grab parent
         const parent = document.querySelector("main");
