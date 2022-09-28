@@ -1,7 +1,11 @@
 @import url('http://fonts.cdnfonts.com/css/univers-next-pro');
 
 
-
+:root {
+    --brown:#856050;
+    --background: #F2F2F0; 
+  }
+  
 
 main {
   display: grid;
@@ -20,7 +24,7 @@ main {
       
   
 body{
-    background-color:#F2F2F0
+    background-color: var(--background)
     ;
 }
 
@@ -35,7 +39,7 @@ display: flex;
 flex-direction:row;
 margin-bottom: 10vw;
 font-family: 'Univers Next Pro', sans-serif;
-color: #856050
+color: var(--brown)
 ;
 text-decoration: none;
 list-style: none;
@@ -48,7 +52,7 @@ li a{
 
     list-style-type: none;
     font-family: 'Univers Next Pro', sans-serif;
-color: #856050
+    color: var(--brown)
 ;
 text-decoration: none;
 list-style: none;
@@ -76,7 +80,7 @@ grid-template-columns: auto auto auto auto;
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 2.8fr 0.1fr 0.1fr; 
-color:  #856050;
+    color: var(--brown)
 
    
     grid-auto-flow: row;
@@ -134,7 +138,7 @@ margin-top: -1vw; }
 
     list-style-type: none;
     font-family: 'Univers Next Pro', sans-serif;
-color: #856050
+    color: var(--brown)
 ;
 text-decoration: none;
 list-style: none;
@@ -151,7 +155,7 @@ margin-left: 2.3vw;
 
         list-style-type: none;
         font-family: 'Univers Next Pro', sans-serif;
-    color: #856050
+        color: var(--brown)
     ;
     text-decoration: none;
     list-style: none;
