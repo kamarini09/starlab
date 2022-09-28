@@ -1,4 +1,4 @@
-const url= 'https://kea22w-6c02.restdb.io/rest/starlab?q={"category":"Rent"}' 
+const url= 'https://kea22w-6c02.restdb.io/rest/starlab      "}' 
 const options = {
       headers: {
            "x-apikey": "6331a2f932330102d591d1ed"   }
