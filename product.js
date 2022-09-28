@@ -1,4 +1,4 @@
-const url= "https://kea22w-6c02.restdb.io/rest/starlab"  
+const url= 'https://kea22w-6c02.restdb.io/rest/starlab?q={"category":"Rent"}' 
 const options = {
       headers: {
            "x-apikey": "6331a2f932330102d591d1ed"   }
@@ -32,15 +32,40 @@ fetch(url, options)
             // 3 clone it
             const clone = template.cloneNode(true);
             // 4 populate with data
-            clone.querySelector("h2").textContent= bikini.category;
+            clone.querySelector(".grid .price").textContent= bikini.price;
+
+            
             clone.querySelector("img").src = bikini.img_url;
-            clone.querySelector("h3").textContent= bikini.name;
+            clone.querySelector(".grid .bikininame").textContent= bikini.name;
+            clone.querySelector(".grid .description").textContent= bikini.description;
+            clone.querySelector(".grid .cup").textContent= bikini.size;
+         
+            
+
            
          
               //5 append it to the DOM
 
             const mainEl = document.querySelector("main");
             mainEl.appendChild(clone);
-           
+          
+
         });
+
     }
+    // for (let i = 0; i < 20; i++) {
+    //     let div = document.createElement('div')
+    //     document.body.appendChild(div)
+    //     div.textContent = i
+    //   }
+    // function getDepthValue() {
+    //     let clone;
+    //     if (typeof clone === "rent") return clone;
+     
+       
+    //     } 
+
+    // if (category.textContent=="rent") 
+    // return 1; 
+    // else null; 
+
