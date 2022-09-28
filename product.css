@@ -15,6 +15,7 @@ main {
           ". . ."
           ". . .";
           margin-left: 10vw;
+
       }
       
   
@@ -39,6 +40,8 @@ color: #856050
 text-decoration: none;
 list-style: none;
 align-items:flex-start;
+
+
 }
 
 li a{
@@ -116,6 +119,7 @@ margin-top: -1vw; }
       font-family: 'Univers Next Pro', sans-serif;
       font-size: 1.2vw;
       
+   
       
   }
   
@@ -201,4 +205,15 @@ margin-left: 2.3vw;
 
 svg{
     margin-left: 0.5vw;
+}
+
+.wrapper1 a {
+    list-style-type: none;
+    font-family: 'Univers Next Pro', sans-serif;
+color: #020202
+;
+text-decoration: none;
+list-style: none;
+margin-left: 1vw;
+
 }
