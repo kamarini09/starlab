@@ -4,6 +4,7 @@
 :root {
     --brown:#856050;
     --background: #F2F2F0; 
+    --black:var(--black); 
   }
   
 
@@ -98,11 +99,112 @@ margin-left: 4vw;}
   .pic4 { grid-area: 2 / 2 / 5 / 3;
 margin-left: -1vw; }
   
-  .description1 { grid-area: 2 / 3 / 3 / 4; }
+  .description1 { grid-area: 2 / 3 / 3 / 4;
+
+    font-family: 'Univers Next Pro', sans-serif;
+    color: var(--black)  ;  
+}
+
   
-  .description2 { grid-area: 3 / 3 / 4 / 4; }
+  .description2 { grid-area: 3/ 3 / 4 / 4; 
+    margin-top: -10vw;
+
+    font-family: 'Univers Next Pro', sans-serif;
+    color: var(--black)  ;  
+font-weight: lighter;
+font-size: 1.3vw;
+
+
+}
   
-  .description3 { grid-area: 4 / 3 / 5 / 4; }
+  .description3 { grid-area: 4 / 3 / 5 / 4;
+
+    font-family: 'Univers Next Pro', sans-serif;
+    color: var(--black)  ;  
+font-weight: bold;
+font-size: 1.3vw;
+margin-top: -10vw;}
+
+
+
   
-  .topnavbar { grid-area: 1 / 1 / 2 / 4; }
-  
+  .topnavbar { grid-area: 1 / 1 / 2 / 4; 
+    list-style-type: none;
+    font-family: 'Univers Next Pro', sans-serif;
+    color: var(--brown)
+;
+text-decoration: none;
+list-style: none;
+margin-top: 7vw;
+
+
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+}
+  .topnavbar ol {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+
+
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    margin-left: 2vw;
+
+    align-items:flex-start;
+    flex-direction: row;
+flex-wrap: wrap;
+
+  }
+
+.topnavbar li {
+    margin-left: 2.2vw;
+    list-style-type: none;
+    font-family: 'Univers Next Pro', sans-serif;
+    color: var(--brown);
+    margin-bottom:1.6vw
+
+}
+
+.description .price{
+    margin-left: 3vw;
+}
+
+.description3 .button{
+    margin-top: 15vw;
+
+    background-color: var(--brown);
+color:white;
+font-size: 1.6vw;
+font-family: 'Univers Next Pro', sans-serif;
+padding: 1.3vw;
+padding-left: 13vw;
+padding-right: 13vw;
+
+}
+
+.description3 .extra{
+    font-size: 1.6vw;
+font-family: 'Univers Next Pro', sans-serif;
+font-weight: lighter;
+margin-left: 8vw;
+margin-top: 1vw;
+
+}
+
+
+select {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding: 1vw;
+    margin-left: 5vw;
+    background-color:var(--brown);
+    font-family: 'Univers Next Pro', sans-serif;    
+    font-size: 1.5vw;
+}
